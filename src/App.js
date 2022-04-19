@@ -7,10 +7,12 @@ import Scanner from "./components/Scanner";
 import EditProduct from "./components/EditProduct";
 import Home from "./components/Home";
 import Auth from "./components/auth/Auth";
+import MailAuth from "./components/auth/MailAuth";
 function App() {
+  
   return (
-    <div>
-      <Auth/>
+    <div className="">
+      <MailAuth/>
       {/* <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/edit/:id" element={<EditProduct />} />

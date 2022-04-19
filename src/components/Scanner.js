@@ -9,7 +9,7 @@ const Scanner = ({ master }) => {
     const [data, setData] = useState("Not Found");
     if (checked == "Not_Found") {
         return (
-            <div>
+            <div className="page">
                 <NavLink to="/">
                     <div className="col-2">
                         <h2>&lt;--</h2>
@@ -22,8 +22,8 @@ const Scanner = ({ master }) => {
                     </div>
                 </div>
                 <BarcodeScannerComponent
-                    width={500}
-                    height={500}
+                    width={`100%`}
+                    height={`100%`}
                     onUpdate={(err, result) => {
                         if (result) {
                             master.masterProduct.map((val) => {
